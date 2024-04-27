@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".DriveActivity"
+    android:background="@drawable/curved_road_forest">
+
+    <EditText
+        android:id="@+id/driver_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/driver"
+        android:inputType="text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/km_start_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/start_km"
+        android:inputType="number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_input" />
+
+    <EditText
+        android:id="@+id/km_stop_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/stop_km"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driveAnimation" />
+
+    <EditText
+        android:id="@+id/time_start_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/start_time"
+        android:inputType="time"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/km_start_input" />
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/date"
+        android:inputType="text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driver_input" />
+
+    <EditText
+        android:id="@+id/time_stop_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/stop_time"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/km_stop_input" />
+
+    <Button
+        android:id="@+id/drive_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FF00"
+        android:text="@string/drive"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/km_stop_input"
+        app:layout_constraintStart_toStartOf="@+id/time_start_input"
+        app:layout_constraintTop_toBottomOf="@+id/time_start_input" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="@string/stop"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/km_stop_input"
+        app:layout_constraintStart_toStartOf="@+id/time_start_input"
+        app:layout_constraintTop_toBottomOf="@+id/time_start_input" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#3399FF"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_stop_input" />
+
+    <ImageButton
+        android:id="@+id/btn_switchToOcr"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/km_start_input"
+        app:layout_constraintStart_toEndOf="@+id/km_start_input"
+        app:layout_constraintTop_toTopOf="@+id/km_start_input"
+        app:srcCompat="@drawable/camera2" />
+
+    <ImageButton
+        android:id="@+id/btn_switchToOcr_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/km_stop_input"
+        app:layout_constraintTop_toTopOf="@+id/km_stop_input"
+        app:srcCompat="@drawable/camera2" />
+
+    <ImageButton
+        android:id="@+id/timeButton_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/time_start_input"
+        app:layout_constraintTop_toTopOf="@+id/time_start_input"
+        app:srcCompat="@drawable/uhr" />
+
+    <ImageButton
+        android:id="@+id/timeButton_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/time_stop_input"
+        app:layout_constraintTop_toTopOf="@+id/time_stop_input"
+        app:srcCompat="@drawable/uhr" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/driveAnimation"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/turning_wheel_2"
+        app:layout_constraintEnd_toEndOf="@+id/timeButton_1"
+        app:layout_constraintTop_toBottomOf="@+id/time_start_input" />
+
+
+    <ImageButton
+        android:id="@+id/date_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/calendar"
+        app:layout_constraintStart_toEndOf="@+id/date_input"
+        app:layout_constraintTop_toTopOf="@+id/date_input" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

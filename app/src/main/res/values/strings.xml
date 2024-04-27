@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Logbook</string>
+    <string name="driver">Driver</string>
+    <string name="start_km">Start km</string>
+    <string name="stop_km">Stop km</string>
+    <string name="start_time">Start time</string>
+    <string name="date">Date</string>
+    <string name="stop_time">Stop time</string>
+    <string name="drive">Drive</string>
+    <string name="stop">STOP</string>
+    <string name="save">SAVE</string>
+    <string name="filter_name">Name</string>
+    <string name="filter_ok">OK</string>
+    <string name="main_drive">Drive</string>
+    <string name="main_logbook">Logbook</string>
+    <string name="main_filter">Filter</string>
+    <string name="main_options">Options</string>
+    <string name="ocr_take_picture">Take picture</string>
+    <string name="ocr_copy_text">Copy Text</string>
+    <string name="ocr_ok">OK</string>
+    <string name="ocr_textview">TextView</string>
+    <string name="ocr_km">km</string>
+    <string name="select_language">Language</string>
+
+</resources>
