@@ -10,14 +10,7 @@
 📂 [Layout xml Files](./app/src/main/res/layout)
 
 
-
-
-
 by Martin Hild\
-GitHub: martinhild\
-edX: martinhild\
-from Merching, Germany
-
 
 ### Description:
 
