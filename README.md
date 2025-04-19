@@ -5,7 +5,7 @@
 
 #### Source Code (Java): [URL HERE](https://github.com/martinhild/CS50-Final-Project---Logbook/tree/master/app/src/main/java/com/example/sqltest)
 
-📂 [Java Source Files](./app/src/main/java/) – Contains all the core logic and activity classes of the app.
+📂 [Java Source Files](./app/src/main/java/com/example/sqltest) – Contains all the core logic and activity classes of the app.
 
 
 
