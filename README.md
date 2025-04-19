@@ -3,7 +3,7 @@
 
 #### Video Demo:  [URL HERE](https://www.youtube.com/watch?v=IEuto3SbtQ0)
 
-#### Source Code (Java): [URL HERE](https://github.com/martinhild/CS50-Final-Project---Logbook/tree/master/app/src/main/java/com/example/sqltest)
+#### Code:
 
 📂 [Java Source Files](./app/src/main/java/com/example/sqltest)
 
