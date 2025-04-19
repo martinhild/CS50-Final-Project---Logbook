@@ -3,8 +3,9 @@
 
 #### Video Demo:  [URL HERE](https://www.youtube.com/watch?v=IEuto3SbtQ0)
 
-#### Code:  📂 [Java Source Files](./app/src/main/java/com/example/sqltest)
-            📂 [Layout xml Files](./app/src/main/res/layout)
+#### Code:
+📂 [Java Source Files](./app/src/main/java/com/example/sqltest)
+📂 [Layout xml Files](./app/src/main/res/layout)
 
 
 by Martin Hild\
