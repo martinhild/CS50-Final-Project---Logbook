@@ -1,7 +1,7 @@
 
 # Logbook - an Android App for Car Sharing featuring OCR and SQLite Database
 
-#### Video Demo:  [URL HERE]([https://www.youtube.com/watch?v=IEuto3SbtQ0](https://github.com/martinhild/CS50-Final-Project---Logbook))
+#### Video Demo:  [URL HERE](https://www.youtube.com/watch?v=k-yl5ljBSEs&ab_channel=MartinHild)
 
 #### Code:
 📂 [Java Source Files](./app/src/main/java/com/example/sqltest)
